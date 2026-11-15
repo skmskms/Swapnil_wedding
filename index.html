@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#241b20">
+  <meta name="description" content="Celebrate the wedding of Swapnil and Mayuri on 12 December 2026.">
+  <title>Swapnil & Mayuri | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:#2b2025; --wine:#6e3548; --rose:#b77a83; --gold:#c8a56a;
+      --cream:#fbf6ef; --paper:#fffaf5; --muted:#75676a; --line:#e8d9d0;
+      --serif:"Cormorant Garamond", Georgia, serif; --sans:"DM Sans", Arial, sans-serif;
+      --marathi:"Tiro Devanagari Marathi", serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:300}
+    a{color:inherit}
+    .topbar{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:rgba(35,25,30,.72);backdrop-filter:blur(14px);color:#fff}
+    .brand{font-family:var(--serif);font-size:24px;letter-spacing:.04em}
+    .nav{display:flex;gap:22px;align-items:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+    .nav a{text-decoration:none;opacity:.9}
+    .nav a:hover{color:#e8c990}
+    .music-btn,.menu-btn{border:1px solid rgba(255,255,255,.55);background:transparent;color:#fff;padding:9px 13px;border-radius:30px;font:inherit;font-size:11px;letter-spacing:.1em;cursor:pointer}
+    .menu-btn{display:none}
+    .hero{min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;background:#34242c}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,17,22,.48),rgba(28,18,23,.27) 42%,rgba(25,17,22,.75)),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=85") center/cover;transform:scale(1.02)}
+    .hero-content{position:relative;z-index:1;padding:120px 22px 80px;max-width:900px}
+    .eyebrow{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#f0d7b0}
+    .hero h1{font:500 clamp(64px,12vw,140px)/.82 var(--serif);margin:28px 0 18px;letter-spacing:-.035em}
+    .amp{font-style:italic;color:#e8c990;font-size:.65em}
+    .hero .marathi{font:25px var(--marathi);color:#f8e7d7;margin:18px 0}
+    .hero-date{font-size:12px;letter-spacing:.3em;text-transform:uppercase;margin-top:30px}
+    .scroll-cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:#f2dfc7}
+    .scroll-cue:after{content:"";display:block;width:1px;height:36px;background:#e6c995;margin:12px auto 0}
+    section{padding:100px 7vw}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 48px}
+    .kicker{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);font-weight:600}
+    h2{font:500 clamp(42px,6vw,68px)/.95 var(--serif);margin:13px 0 15px;color:var(--wine)}
+    .marathi{font-family:var(--marathi)}
+    .section-head p,.intro-copy{color:var(--muted);line-height:1.9;font-size:14px}
+    .intro{background:var(--paper);text-align:center}
+    .ornament{color:var(--gold);font:30px var(--serif);letter-spacing:.4em;margin:18px 0}
+    .intro-copy{max-width:700px;margin:0 auto}
+    .names{font:italic 32px var(--serif);color:var(--wine);margin-top:25px}
+    .countdown-section{background:#38252e;color:#fff;text-align:center;padding:82px 6vw}
+    .countdown-section h2{color:#f6e7d6}
+    .countdown{display:flex;justify-content:center;gap:clamp(12px,4vw,48px);margin-top:36px;flex-wrap:wrap}
+    .time-box{min-width:76px}
+    .time-box strong{display:block;font:500 clamp(42px,7vw,68px)/1 var(--serif);color:#e8c990}
+    .time-box span{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#e7d8d7}
+    .story{background:var(--cream)}
+    .story-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+    .photo-frame{position:relative;padding:12px;border:1px solid #d7bd9b}
+    .photo-frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#eadbd1}
+    .photo-caption{font:italic 28px var(--serif);color:var(--wine);text-align:center;margin-top:14px}
+    .story-text{padding:20px 3vw}
+    .story-text p{font-size:14px;line-height:2;color:var(--muted)}
+    .events{background:#f5ece5}
+    .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1100px;margin:auto}
+    .event{background:var(--paper);padding:34px 25px;text-align:center;border:1px solid var(--line);min-height:250px}
+    .event .symbol{font:34px var(--serif);color:var(--gold)}
+    .event h3{font:500 32px var(--serif);color:var(--wine);margin:15px 0 5px}
+    .event .marathi{color:var(--rose);font-size:17px}
+    .event p{font-size:12px;line-height:1.8;color:var(--muted)}
+    .venue{background:var(--paper);text-align:center}
+    .venue-card{max-width:760px;margin:auto;padding:42px 24px;border:1px solid var(--line);background:#fff}
+    .venue-card h3{font:500 36px var(--serif);color:var(--wine);margin:8px}
+    .venue-card p{font-size:13px;line-height:1.9;color:var(--muted)}
+    .outline-btn{display:inline-block;margin-top:16px;padding:13px 23px;border:1px solid var(--gold);text-decoration:none;color:var(--wine);font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+    .gallery{background:var(--cream)}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:230px 230px;gap:14px;max-width:1100px;margin:auto}
+    .gallery-grid img{width:100%;height:100%;object-fit:cover;background:#eadbd1}
+    .gallery-grid img:first-child{grid-row:span 2}
+    .rsvp{background:#38252e;color:#fff;text-align:center}
+    .rsvp h2{color:#f6e7d6}
+    .rsvp p{color:#e6d8d6;font-size:13px;line-height:1.9}
+    .rsvp-form{max-width:520px;margin:30px auto 0;display:grid;gap:12px;text-align:left}
+    .rsvp-form input,.rsvp-form select,.rsvp-form textarea{width:100%;padding:14px 15px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;font:13px var(--sans);border-radius:0}
+    .rsvp-form input::placeholder,.rsvp-form textarea::placeholder{color:#d4c4c7}
+    .rsvp-form select option{color:#222}
+    .rsvp-form button{padding:15px;border:0;background:#d7b77f;color:#2b2025;text-transform:uppercase;letter-spacing:.18em;font-size:10px;font-weight:600;cursor:pointer}
+    .form-note{font-size:11px!important;color:#d7c8c9!important}
+    footer{background:#24191f;color:#d8c7c6;text-align:center;padding:42px 20px}
+    footer .footer-names{font:italic 40px var(--serif);color:#e8c990}
+    footer p{font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media(max-width:760px){
+      .topbar{padding:12px 5vw}.brand{font-size:21px}.menu-btn{display:block}
+      .nav{display:none;position:absolute;top:58px;left:0;right:0;background:rgba(35,25,30,.96);padding:20px;flex-direction:column}
+      .nav.open{display:flex}.music-btn{padding:8px 10px}
+      section{padding:76px 6vw}.story-grid{grid-template-columns:1fr}.story-text{padding:10px 0}
+      .event-grid{grid-template-columns:1fr}.event{min-height:0;padding:28px}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 150px 150px}
+      .gallery-grid img:first-child{grid-row:span 2}
+      .gallery-grid img:last-child{grid-column:span 2}
+      .hero h1{font-size:clamp(62px,17vw,100px)}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">S <span style="color:#e8c990">&</span> M</div>
+    <nav class="nav" id="nav">
+      <a href="#story">Our story</a><a href="#events">Celebrations</a><a href="#venue">Venue</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="music-btn" id="musicToggle" type="button">♫ Play music</button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">Together with our families</div>
+        <h1>Swapnil <span class="amp">&</span><br>Mayuri</h1>
+        <div class="marathi">शुभविवाह सोहळा</div>
+        <div class="eyebrow" style="margin-top:28px">Joyfully invite you to celebrate our wedding</div>
+        <div class="hero-date">Saturday · 12 December 2026</div>
+      </div>
+      <div class="scroll-cue">Scroll to explore</div>
+    </section>
+
+    <section class="intro">
+      <div class="section-head reveal">
+        <div class="kicker">A promise of forever</div>
+        <h2>Two hearts, one beautiful journey</h2>
+        <div class="marathi" style="font-size:21px;color:var(--rose)">दोन मनांचा, एका सुंदर प्रवासाचा शुभारंभ</div>
+        <div class="ornament">✧ ❧ ✧</div>
+        <p class="intro-copy">With the blessings of our families and the love of our friends, we invite you to be part of a day filled with joy, laughter and memories that will last a lifetime. Your presence will make our celebration even more special.</p>
+        <div class="names">Swapnil & Mayuri</div>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="kicker" style="color:#e8c990">The celebration begins in</div>
+      <h2>Counting every moment</h2>
+      <div class="marathi" style="color:#e8c990">आनंदाच्या क्षणांची उलटी गिनती</div>
+      <div class="countdown" aria-live="polite">
+        <div class="time-box"><strong id="days">--</strong><span>Days</span></div>
+        <div class="time-box"><strong id="hours">--</strong><span>Hours</span></div>
+        <div class="time-box"><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div class="time-box"><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="section-head reveal">
+        <div class="kicker">A little about us</div><h2>Our story</h2>
+        <div class="marathi" style="font-size:20px;color:var(--rose)">आमची गोष्ट</div>
+      </div>
+      <div class="story-grid reveal">
+        <div class="photo-frame">
+          <img src="assets/couple-portrait.jpg" alt="Swapnil and Mayuri together" onerror="this.style.objectFit='contain';this.alt='Add your couple portrait as assets/couple-portrait.jpg';this.src='https://placehold.co/800x1000/f0e4dc/6e3548?text=Add+Your+Couple+Photo'">
+          <div class="photo-caption">The beginning of forever</div>
+        </div>
+        <div class="story-text">
+          <div class="kicker">Made for each other</div>
+          <h2 style="font-size:52px">A new chapter awaits</h2>
+          <p>Some journeys are written in the stars. Ours brought two families, two hearts and countless dreams together. As we begin this new chapter, we would love to have you beside us, sharing every smile and blessing.</p>
+          <p class="marathi" style="font-size:18px;color:var(--wine)">तुमच्या प्रेमळ उपस्थितीने आमचा आनंद द्विगुणित होईल. या मंगल क्षणी आपण आवर्जून यावे, हीच विनंती.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="section-head reveal">
+        <div class="kicker">Save the moments</div><h2>Wedding celebrations</h2>
+        <div class="marathi" style="font-size:20px;color:var(--rose)">मंगल सोहळे</div>
+        <p>We would be delighted to celebrate these special moments with you. Please update the event details below to match your schedule.</p>
+      </div>
+      <div class="event-grid reveal">
+        <article class="event">
+          <div class="symbol">✿</div><h3>Haldi</h3><div class="marathi">हळदी समारंभ</div>
+          <p><strong>11 December 2026</strong><br>Time: Add event time<br>Venue: Add venue</p>
+        </article>
+        <article class="event">
+          <div class="symbol">❀</div><h3>Wedding</h3><div class="marathi">शुभविवाह</div>
+          <p><strong>12 December 2026</strong><br>Time: Add ceremony time<br>Venue: Add venue</p>
+        </article>
+        <article class="event">
+          <div class="symbol">✧</div><h3>Reception</h3><div class="marathi">स्वागत समारंभ</div>
+          <p><strong>Add date</strong><br>Time: Add event time<br>Venue: Add venue</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="venue" id="venue">
+      <div class="section-head reveal">
+        <div class="kicker">Join us here</div><h2>Wedding venue</h2>
+        <div class="marathi" style="font-size:20px;color:var(--rose)">विवाहस्थळ</div>
+      </div>
+      <div class="venue-card reveal">
+        <div class="ornament">✧</div>
+        <h3>Add your venue name</h3>
+        <p>Add the full venue address here, including area, city and PIN code.<br>We look forward to welcoming you!</p>
+        <a class="outline-btn" href="https://maps.google.com" target="_blank" rel="noopener">Open Google Maps ↗</a>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-head reveal">
+        <div class="kicker">Captured moments</div><h2>Our favourite memories</h2>
+        <div class="marathi" style="font-size:20px;color:var(--rose)">आठवणींचे क्षण</div>
+      </div>
+      <div class="gallery-grid reveal">
+        <img src="assets/gallery-1.jpg" alt="Couple memory one" onerror="this.src='https://placehold.co/800x1000/e8d8cf/6e3548?text=Photo+1'">
+        <img src="assets/gallery-2.jpg" alt="Couple memory two" onerror="this.src='https://placehold.co/600x500/eadfd5/6e3548?text=Photo+2'">
+        <img src="assets/gallery-3.jpg" alt="Couple memory three" onerror="this.src='https://placehold.co/600x500/e7d6d0/6e3548?text=Photo+3'">
+        <img src="assets/gallery-4.jpg" alt="Couple memory four" onerror="this.src='https://placehold.co/1000x500/dfcfc6/6e3548?text=Photo+4'">
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp">
+      <div class="section-head reveal">
+        <div class="kicker" style="color:#e8c990">We hope you can make it</div><h2>Will you join us?</h2>
+        <div class="marathi" style="font-size:20px;color:#e8c990">आपण येणार ना?</div>
+        <p>Your blessings are the greatest gift. Please let us know if you can join our celebration.</p>
+      </div>
+      <form class="rsvp-form reveal" id="rsvpForm">
+        <input name="guest" placeholder="Your name / आपले नाव" required>
+        <input name="phone" placeholder="Mobile number (optional)" inputmode="tel">
+        <select name="attendance" required>
+          <option value="">Will you attend? / आपण उपस्थित राहणार का?</option>
+          <option value="Yes, happily attending">Yes, happily attending</option>
+          <option value="Sorry, unable to attend">Sorry, unable to attend</option>
+        </select>
+        <input name="guests" type="number" min="1" max="20" value="1" placeholder="Number of guests">
+        <textarea name="message" rows="3" placeholder="A message for the couple (optional)"></textarea>
+        <button type="submit">Send RSVP via WhatsApp</button>
+        <p class="form-note">This opens WhatsApp with your RSVP message ready to send. No information is stored on this website.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-names">Swapnil & Mayuri</div>
+    <p>12 · 12 · 2026 &nbsp; | &nbsp; Made with love</p>
+    <div class="marathi" style="font-size:18px;color:#e8c990">आपली उपस्थिती हीच आमच्यासाठी अनमोल भेट</div>
+  </footer>
+
+  <audio id="weddingAudio" loop preload="none">
+    <source src="assets/wedding-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // EDIT THIS: include your WhatsApp number with country code, digits only (India: 91XXXXXXXXXX).
+    const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+    const weddingDate = new Date("2026-12-12T10:00:00+05:30").getTime();
+
+    function updateCountdown() {
+      const diff = weddingDate - Date.now();
+      if (diff <= 0) {
+        document.querySelector(".countdown").innerHTML = "<p>Today is the day! शुभविवाह सोहळा!</p>";
+        return;
+      }
+      const values = {
+        days: Math.floor(diff / 86400000),
+        hours: Math.floor((diff % 86400000) / 3600000),
+        minutes: Math.floor((diff % 3600000) / 60000),
+        seconds: Math.floor((diff % 60000) / 1000)
+      };
+      Object.entries(values).forEach(([id, value]) => {
+        document.getElementById(id).textContent = String(value).padStart(2, "0");
+      });
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    const audio = document.getElementById("weddingAudio");
+    const musicButton = document.getElementById("musicToggle");
+    musicButton.addEventListener("click", async () => {
+      if (audio.paused) {
+        try {
+          await audio.play();
+          musicButton.textContent = "♫ Pause music";
+        } catch (e) {
+          alert("Add your music file at assets/wedding-music.mp3, then try again.");
+        }
+      } else {
+        audio.pause();
+        musicButton.textContent = "♫ Play music";
+      }
+    });
+
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("nav").classList.toggle("open");
+    });
+    document.querySelectorAll(".nav a").forEach(link => link.addEventListener("click", () => {
+      document.getElementById("nav").classList.remove("open");
+    }));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    document.getElementById("rsvpForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const form = new FormData(event.currentTarget);
+      const guest = form.get("guest");
+      const phone = form.get("phone") || "Not provided";
+      const attendance = form.get("attendance");
+      const guests = form.get("guests") || "1";
+      const message = form.get("message") || "—";
+      const text = `Wedding RSVP - Swapnil & Mayuri%0AName: ${encodeURIComponent(guest)}%0APhone: ${encodeURIComponent(phone)}%0AAttendance: ${encodeURIComponent(attendance)}%0ANumber of guests: ${encodeURIComponent(guests)}%0AMessage: ${encodeURIComponent(message)}`;
+      if (!/^91\d{10}$/.test(WHATSAPP_NUMBER)) {
+        alert("Please edit WHATSAPP_NUMBER in index.html and enter your 10-digit WhatsApp number with 91 country code.");
+        return;
+      }
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
