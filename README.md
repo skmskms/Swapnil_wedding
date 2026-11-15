@@ -1,2 +1,2 @@
-# Swapnil_wedding
+# Swapnil_mayuri_wedding
 Wedding invitation website 
