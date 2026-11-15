@@ -142,7 +142,7 @@
     <section class="countdown-section">
       <div class="kicker" style="color:#e8c990">The celebration begins in</div>
       <h2>Counting every moment</h2>
-      <div class="marathi" style="color:#e8c990">आनंदाच्या क्षणांची उलटी गिनती</div>
+      <!-- <div class="marathi" style="color:#e8c990">आनंदाच्या क्षणांची उलटी गिनती</div> -->
       <div class="countdown" aria-live="polite">
         <div class="time-box"><strong id="days">--</strong><span>Days</span></div>
         <div class="time-box"><strong id="hours">--</strong><span>Hours</span></div>
@@ -154,7 +154,7 @@
     <section class="story" id="story">
       <div class="section-head reveal">
         <div class="kicker">A little about us</div><h2>Our story</h2>
-        <div class="marathi" style="font-size:20px;color:var(--rose)">आमची गोष्ट</div>
+        <!-- <div class="marathi" style="font-size:20px;color:var(--rose)">आमची गोष्ट</div> -->
       </div>
       <div class="story-grid reveal">
         <div class="photo-frame">
@@ -173,21 +173,21 @@
     <section class="events" id="events">
       <div class="section-head reveal">
         <div class="kicker">Save the moments</div><h2>Wedding celebrations</h2>
-        <div class="marathi" style="font-size:20px;color:var(--rose)">मंगल सोहळे</div>
+        <!-- <div class="marathi" style="font-size:20px;color:var(--rose)">मंगल सोहळे</div> -->
         <p>We would be delighted to celebrate these special moments with you. Please update the event details below to match your schedule.</p>
       </div>
       <div class="event-grid reveal">
         <article class="event">
+          <div class="symbol">✧</div><h3>Engagement Ceremony</h3><div class="marathi">साखरपुडा</div>
+          <p><strong>12 December 2026</strong><br>Time: 11 AM<br>Venue: सोनाई लॉन्स</p>
+        </article>
+        <article class="event">
           <div class="symbol">✿</div><h3>Haldi</h3><div class="marathi">हळदी समारंभ</div>
-          <p><strong>11 December 2026</strong><br>Time: Add event time<br>Venue: Add venue</p>
+          <p><strong>12 December 2026</strong><br>Time: 11 AM<br>Venue: सोनाई लॉन्स</p>
         </article>
         <article class="event">
           <div class="symbol">❀</div><h3>Wedding</h3><div class="marathi">शुभविवाह</div>
-          <p><strong>12 December 2026</strong><br>Time: Add ceremony time<br>Venue: Add venue</p>
-        </article>
-        <article class="event">
-          <div class="symbol">✧</div><h3>Reception</h3><div class="marathi">स्वागत समारंभ</div>
-          <p><strong>Add date</strong><br>Time: Add event time<br>Venue: Add venue</p>
+          <p><strong>12 December 2026</strong><br>Time: 11 AM<br>Venue: सोनाई लॉन्स</p>
         </article>
       </div>
     </section>
@@ -199,45 +199,15 @@
       </div>
       <div class="venue-card reveal">
         <div class="ornament">✧</div>
-        <h3>Add your venue name</h3>
-        <p>Add the full venue address here, including area, city and PIN code.<br>We look forward to welcoming you!</p>
-        <a class="outline-btn" href="https://maps.google.com" target="_blank" rel="noopener">Open Google Maps ↗</a>
+        <h3>सोनाई लॉन्स</h3>
+        <p>हडपसर - सासवड- जेजुरी रोड , सोनाई हॉटेल समोर उरुळी देवाची / वडकी, पुणे, महाराष्ट्र 412308.<br>We look forward to welcoming you!</p>
+        <a class="outline-btn" href="https://maps.app.goo.gl/domHPVJ1WpxqtgF48" target="_blank" rel="noopener">Open Google Maps ↗</a>
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
-      <div class="section-head reveal">
-        <div class="kicker">Captured moments</div><h2>Our favourite memories</h2>
-        <div class="marathi" style="font-size:20px;color:var(--rose)">आठवणींचे क्षण</div>
-      </div>
-      <div class="gallery-grid reveal">
-        <img src="assets/gallery-1.jpg" alt="Couple memory one" onerror="this.src='https://placehold.co/800x1000/e8d8cf/6e3548?text=Photo+1'">
-        <img src="assets/gallery-2.jpg" alt="Couple memory two" onerror="this.src='https://placehold.co/600x500/eadfd5/6e3548?text=Photo+2'">
-        <img src="assets/gallery-3.jpg" alt="Couple memory three" onerror="this.src='https://placehold.co/600x500/e7d6d0/6e3548?text=Photo+3'">
-        <img src="assets/gallery-4.jpg" alt="Couple memory four" onerror="this.src='https://placehold.co/1000x500/dfcfc6/6e3548?text=Photo+4'">
-      </div>
-    </section>
+    
 
-    <section class="rsvp" id="rsvp">
-      <div class="section-head reveal">
-        <div class="kicker" style="color:#e8c990">We hope you can make it</div><h2>Will you join us?</h2>
-        <div class="marathi" style="font-size:20px;color:#e8c990">आपण येणार ना?</div>
-        <p>Your blessings are the greatest gift. Please let us know if you can join our celebration.</p>
-      </div>
-      <form class="rsvp-form reveal" id="rsvpForm">
-        <input name="guest" placeholder="Your name / आपले नाव" required>
-        <input name="phone" placeholder="Mobile number (optional)" inputmode="tel">
-        <select name="attendance" required>
-          <option value="">Will you attend? / आपण उपस्थित राहणार का?</option>
-          <option value="Yes, happily attending">Yes, happily attending</option>
-          <option value="Sorry, unable to attend">Sorry, unable to attend</option>
-        </select>
-        <input name="guests" type="number" min="1" max="20" value="1" placeholder="Number of guests">
-        <textarea name="message" rows="3" placeholder="A message for the couple (optional)"></textarea>
-        <button type="submit">Send RSVP via WhatsApp</button>
-        <p class="form-note">This opens WhatsApp with your RSVP message ready to send. No information is stored on this website.</p>
-      </form>
-    </section>
+   
   </main>
 
   <footer>
@@ -246,7 +216,7 @@
     <div class="marathi" style="font-size:18px;color:#e8c990">आपली उपस्थिती हीच आमच्यासाठी अनमोल भेट</div>
   </footer>
 
-  <audio id="weddingAudio" loop preload="none">
+  <audio id="weddingAudio" loop preload="auto">
     <source src="assets/wedding-music.mp3" type="audio/mpeg">
   </audio>
 
